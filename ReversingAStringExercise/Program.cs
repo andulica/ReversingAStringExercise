@@ -32,10 +32,7 @@ namespace ReversingAStringExercise
 
                     for (int j = 0; j < chars.Length; j++)
                     {
-                        if (chars[i] == charsReversed[j])
-                        {
-                            Console.WriteLine("This is a palindrome");
-                        }
+                        
 
                     }
 
