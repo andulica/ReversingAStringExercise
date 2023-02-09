@@ -6,42 +6,69 @@ namespace ReversingAStringExercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter a word: ");
-            string userWord = Console.ReadLine();
+            //Console.WriteLine("Please enter a word that you want to be reversed: ");
+            //string userWord = Console.ReadLine();
 
-            Regex regex = new Regex(@"^[a-zA-Z]+$");
+            //Regex regex = new Regex(@"^[a-zA-Z]+$");
 
-            if (userWord.Equals(regex)!)
+
+            //char[] chars = userWord.ToCharArray();
+            //char[] charsReversed = new char[chars.Length];
+            //int counter = 2;
+            //int j;
+
+
+            //for (int i = chars.Length - 1; i >= 0; i--)
+            //{
+            //    for (j = 1; j < counter; j++)
+            //    {
+            //        charsReversed[i] = chars[i];
+            //        Console.Write(charsReversed[i]);
+            //    }
+            //    j++;
+            //    counter++;
+            //}
+
+
+            //if (chars == charsReversed)
+            //{
+            //    Console.WriteLine("This word is a palindrome");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("This word is not a palindrome");
+            //}
+
+            Console.WriteLine("Please enter the word that you want to reverse;");
+            string inputUser = Console.ReadLine();
+            
+
+            string reverse = "";
+            for(int i = inputUser.Length - 1; 1 >= 0; i--)
             {
-                Console.WriteLine("Please enter a valid word: ");
+                reverse += inputUser[i]; // Error is here . out
+                Console.WriteLine(reverse);
+
+            }
+
+            bool palindrome = true;
+            for (int i = 0; i < inputUser.Length; i++) {
+                if (inputUser[i] != reverse[i])
+                {
+                    palindrome = false;
+                }
+            }
+
+            if(palindrome) // This condition is not beign processed at all. According to the 2nd for loop --->
+                           //-->  palindrome bool is either set to false or true and should print either statement
+            {
+                Console.WriteLine("PALINDROME");
             }
             else
             {
-                char[] chars = userWord.ToCharArray();
-                char[] charsReversed = new char[chars.Length];
-
-
-                for (int i = chars.Length - 1; i >= 0; i--)
-                {
-                    charsReversed[i] = chars[i];
-                    Console.Write(charsReversed[i]);
-                }
-
-                for (int i = chars.Length - 1; i >= 0; i--)
-                {
-
-                    for (int j = 0; j < chars.Length; j++)
-                    {
-                        
-
-                    }
-
-                }
-
+                Console.WriteLine("NOT A PALINDROME");
             }
-
-            Console.WriteLine("This is the end");
-            var whatever = Console.ReadLine;
         }
+
     }
 }
