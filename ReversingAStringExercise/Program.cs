@@ -46,7 +46,8 @@ namespace ReversingAStringExercise
             string reverse = "";
             for(int i = inputUser.Length - 1; 1 >= 0; i--)
             {
-                reverse += inputUser[i]; // Error is here . out
+                reverse += inputUser[i]; // Error is here. An Exception is being thrown SystemIndexOutOfRangeException.
+                                          // In java I don't have this issue (See whatsap group image
                 Console.WriteLine(reverse);
 
             }
