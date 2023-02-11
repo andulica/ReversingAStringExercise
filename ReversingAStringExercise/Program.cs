@@ -44,9 +44,11 @@ namespace ReversingAStringExercise
             
 
             string reverse = "";
-            for(int i = inputUser.Length - 1; 1 >= 0; i--)
+            for(int i = inputUser.Length - 1; i >= 0; i--)
             {
-                reverse += inputUser[i]; // Error is here . An excetption is being throw : SystemIindexOutOfRangeException
+
+                reverse += inputUser[i]; 
+               
                 Console.WriteLine(reverse);
 
             }
@@ -59,8 +61,7 @@ namespace ReversingAStringExercise
                 }
             }
 
-            if(palindrome) // This condition is not beign processed at all. According to the 2nd for loop --->
-                           //-->  palindrome bool is either set to false or true and should print either statement
+            if(palindrome) 
             {
                 Console.WriteLine("PALINDROME");
             }
