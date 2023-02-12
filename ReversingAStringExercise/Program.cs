@@ -41,27 +41,26 @@ namespace ReversingAStringExercise
 
             Console.WriteLine("Please enter the word that you want to reverse;");
             string inputUser = Console.ReadLine();
-            
+
 
             string reverse = "";
-            for(int i = inputUser.Length - 1; i >= 0; i--)
+            for (int i = inputUser.Length - 1; i >= 0; i--)
             {
-
-                reverse += inputUser[i]; 
-               
+                reverse += inputUser[i];
                 Console.WriteLine(reverse);
-
             }
 
             bool palindrome = true;
-            for (int i = 0; i < inputUser.Length; i++) {
+            for (int i = 0; i < inputUser.Length; i++)
+            {
                 if (inputUser[i] != reverse[i])
                 {
                     palindrome = false;
+                    break;
                 }
             }
 
-            if(palindrome) 
+            if (palindrome)
             {
                 Console.WriteLine("PALINDROME");
             }
