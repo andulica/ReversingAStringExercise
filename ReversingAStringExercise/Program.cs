@@ -1,43 +1,11 @@
-﻿using System.Text.RegularExpressions;
-
+﻿
 namespace ReversingAStringExercise
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Please enter a word that you want to be reversed: ");
-            //string userWord = Console.ReadLine();
-
-            //Regex regex = new Regex(@"^[a-zA-Z]+$");
-
-
-            //char[] chars = userWord.ToCharArray();
-            //char[] charsReversed = new char[chars.Length];
-            //int counter = 2;
-            //int j;
-
-
-            //for (int i = chars.Length - 1; i >= 0; i--)
-            //{
-            //    for (j = 1; j < counter; j++)
-            //    {
-            //        charsReversed[i] = chars[i];
-            //        Console.Write(charsReversed[i]);
-            //    }
-            //    j++;
-            //    counter++;
-            //}
-
-
-            //if (chars == charsReversed)
-            //{
-            //    Console.WriteLine("This word is a palindrome");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("This word is not a palindrome");
-            //}
+            
 
             Console.WriteLine("Please enter the word that you want to reverse;");
             string inputUser = Console.ReadLine();
