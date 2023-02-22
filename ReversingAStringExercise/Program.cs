@@ -8,7 +8,7 @@ namespace ReversingAStringExercise
             
 
             Console.WriteLine("Please enter the word that you want to reverse;");
-            string inputUser = Console.ReadLine();
+            string inputUser = Console.ReadLine().ToLower();
 
 
             string reverse = "";
