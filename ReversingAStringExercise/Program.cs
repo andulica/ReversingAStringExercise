@@ -21,7 +21,7 @@ namespace ReversingAStringExercise
             bool palindrome = true;
             for (int i = 0; i < inputUser.Length; i++)
             {
-                if (inputUser[i] != reverse[i])
+                if (inputUser != reverse)
                 {
                     palindrome = false;
                     break;
