@@ -14,16 +14,8 @@ namespace ReversingAStringExercise
             {
                 reverse += inputUser[inputUser.Length - i];
             }
-                
-            bool palindrome = true;
 
-            if (inputUser != reverse)
-            {
-                palindrome = false;
-            }
-                               
-            if (palindrome)
-                      
+            if (inputUser != reverse)         
             {
                 Console.WriteLine("Palindrome");
             }
